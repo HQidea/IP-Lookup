@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "IP Lookup",
+  "version": "0.1.0",
+  "description": "Context Menu Item For IP Lookup",
+  "permissions": ["contextMenus", "tabs"],
+  "background": {
+    "scripts": ["event.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
